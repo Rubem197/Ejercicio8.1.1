@@ -10,7 +10,6 @@ public class Erasto {
         int numero = sc.nextInt();
         int[] primos = new int[generarTamano(numero)];
         generarValores(primos, numero);
-        generarCriba(primos, numero);
         return primos;
     }
 
@@ -32,16 +31,6 @@ public class Erasto {
                 tamano++;
             }
         }
-    }
-
-    public static void generarCriba(int[] A,int numero) {
-
-        for (int i =0; i <numero;i++){
-            if(3*i!=A[i] || 5*i!=A[i]){
-
-            }
-        }
-
     }
 
 

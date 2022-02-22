@@ -7,8 +7,6 @@ public class Ejercicio4 {
 
 
 
-        for (int x : generarArray()){
-            System.out.println(x);
-        }
+        generarArray();
     }
 }
