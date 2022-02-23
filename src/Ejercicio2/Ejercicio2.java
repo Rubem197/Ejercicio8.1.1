@@ -6,7 +6,12 @@ import static Ejercicio2.Alumnos.*;
 import static Ejercicio2.Alumnos.notaMedia;
 
 public class Ejercicio2 {
-
+    /**
+     * Creacion de 4 objetos alumnos y creacion del array de alumnos con los 4 alumnos creados.
+     * Menu con opciones para elegir los metodos, para salir se usa 0.
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Alumnos a1 = new Alumnos("David");
@@ -15,7 +20,6 @@ public class Ejercicio2 {
         Alumnos a4 = new Alumnos("Ruben");
 
         Alumnos[] alumnos = new Alumnos[]{a1, a2, a3, a4};
-
 
 
         int opc;
@@ -30,6 +34,6 @@ public class Ejercicio2 {
                 case 5 -> debajoMedia(alumnos);
                 default -> System.out.println("Has pulsado un numero invalido introduce otro");
             }
-        }while(opc !=0);
+        } while (opc != 0);
     }
 }
